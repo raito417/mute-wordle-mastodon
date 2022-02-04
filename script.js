@@ -25,7 +25,7 @@
     ];
     const observer = new MutationObserver(records => {
         wordmute_list.forEach(element => {
-            $('div.status__content__text').find(`img[title="${element}"]`).closest('p').replaceWith('Auto CW wordleがこの投稿をミュートしました').removeClass();
+            $('div.status__content__text').find(`img[title="${element}"]`).closest('p').replaceWith('mute-wordle-mastodonがこの投稿をミュートしました').removeClass();
         });
     });
     observer.observe(document.body, {
